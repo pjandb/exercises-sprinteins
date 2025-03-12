@@ -13,6 +13,12 @@ You can choose between the different languages:
 - Java
 - C#
 - C++
+- Python
+
+There are also excercises concerning:
+
+- Dockerization
+- Test automation
 
 # The Use Case
 
