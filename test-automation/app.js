@@ -59,6 +59,7 @@ app.put("/todos/:id", (req, res) => {
   if (title) {
     todo.title = title;
   }
+  // boolean is changed on every put (also on edit)
   todo.completed = !todo.completed;
   saveTodos();
   res.json(todo);
