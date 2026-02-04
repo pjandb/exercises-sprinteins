@@ -8,3 +8,26 @@ services:
       - POSTGRES_DB=user
     ports:
       - 5432:5432
+
+  backend: 
+    build: ./backend
+    container_name: backend
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=db
+      - DB_USER=admin
+      - DB_PASSWOD=password
+      - DB_NAME=user
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  frontend: 
+    build: ./ui
+    container_name: frontend
+    ports:
+      - "80:80"
+    depends_on: 
+      - backend
+    restart: unless-stopped

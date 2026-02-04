@@ -1,1 +1,15 @@
-{}
+{
+  "name": "exercises-sprinteins",
+  "description": "You as a developer get to see this code.\r What would you do differently and why?",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
